@@ -1,0 +1,21 @@
+<div class="addBloc" *ngIf="this.isOpen">
+  <input
+    [(ngModel)]="title"
+    type="text"
+    class="addTitle"
+    placeholder="Заголовок"
+  />
+  <textarea
+    [(ngModel)]="content"
+    name=""
+    cols="30"
+    rows="10"
+    class="addTextarea"
+    placeholder="Введите текст"
+  ></textarea>
+  <div class="buttons">
+    <button class="cancel" (click)="cancelArticle()">Отмена</button>
+    <button class="save" (click)="saveArticle()">Сохранить</button>
+  </div>
+</div>
+<button class="addButton" (click)="addArticle()">+ Добавить</button>

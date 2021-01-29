@@ -1,0 +1,12 @@
+<div class="blog-list">
+  <div
+    *ngFor="let article of articlesService.articles; let i = index"
+    class="blog-list__item"
+  >
+    <h2 class="item__title">{{ article.title }}</h2>
+    <p class="item__content">{{ article.content }}</p>
+    <button class="item__button" routerLink="/single" (click)="openSingle(i)">
+      Перейти
+    </button>
+  </div>
+</div>

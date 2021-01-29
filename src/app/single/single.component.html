@@ -1,0 +1,27 @@
+<div class="single">
+  <button class="single__back" routerLink="/">Назад</button>
+
+  <div class="form">
+    <h2 class="form__title">{{ title }}</h2>
+    <input
+      [(ngModel)]="title"
+      type="text"
+      class="form__input"
+      placeholder="Title записи"
+    />
+    <textarea
+      [(ngModel)]="content"
+      name=""
+      cols="30"
+      rows="30"
+      class="form__textarea"
+      placeholder="Контент записи"
+    >
+    </textarea>
+
+    <div class="form__buttons">
+      <button class="buttons__delete" (click)="deleteArticle()">Удалить</button>
+      <button class="buttons__save" (click)="editArticle()">Сохранить</button>
+    </div>
+  </div>
+</div>

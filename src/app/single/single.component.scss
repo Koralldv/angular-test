@@ -1,0 +1,44 @@
+.single {
+    padding: 20px;
+}
+
+.single__back {
+    padding: 10px 15px;
+    width: 150px;
+    background-color: rgb(10, 176, 253);
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.form__input {
+    margin: 10px 0px 20px 0px;
+}
+
+.form__textarea {
+    margin: 10px 0px 20px 0px;
+}
+
+.form__buttons {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    button {
+        padding: 10px 15px;
+        width: 150px;
+        cursor: pointer;
+    }
+}
+
+.buttons__delete {
+    background-color: red;
+}
+
+.buttons__save {
+    background-color: rgb(10, 176, 253);
+}

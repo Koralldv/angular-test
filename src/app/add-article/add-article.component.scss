@@ -1,0 +1,38 @@
+.addBloc {
+    width: 50vw;
+    background-color:rgb(177, 173, 173);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: calc(-25vw);
+    margin-top: calc(-25vh);
+    input {
+        margin: 20px 0px;
+        padding: 15px 0px;
+    }
+    textarea {
+        margin: 20px 0px;
+    }
+}
+
+.buttons {
+    margin-left: auto;
+    button {
+        margin-left: 10px;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+}
+
+.addButton {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    padding: 10px 15px;
+    background-color: rgb(10, 176, 253);
+    cursor: pointer;
+}
